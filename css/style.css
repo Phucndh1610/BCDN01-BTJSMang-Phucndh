@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 
+ */
+.header {
+    border: 0.2px solid rgb(145, 245, 248);
+ }
+.array-button {
+    border-radius: 5px;
+}
+.array {
+    background-image: url(../css/img/memphis_3.png);
+    background-position: bottom left;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập mảng</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="array py-5">
+        <div class="container header">
+            <div class="bg">
+                <!-- BT -->
+                <div id="accordion" class="col-10 py-4 m-auto">
+                    <form class="row">
+                        <div class="form-group col-6 pt-4">
+                            <input type="number" class="form-control" id="inputSoN" placeholder="Nhập số n">
+                        </div>
+                        <div class="array-button pt-4"><button type="button" id="btnThemSo" class="btn btn-primary ">Thêm
+                                Số</button></div>
+                    </form>
+                    <p id="txtThemSo" class="alert alert-success col-6 my-3 "></p>
+              
+                    <!-- bài 1 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                <i class="fa fa-list" aria-hidden="true"></i> Tổng Số Dương
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="list-group">
+                                <form class="row">
+                                    <div class="array-button pt-3 ml-5"><button type="button" id="btnSum"
+                                            class="btn btn-primary ">Tính Tổng</button></div>
+                                </form>
+                                <p id="txtSum" class="alert alert-success col-11 my-3 ml-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--xxxxxxxxxxx bài 1 xxxxxxxxxx-->
+                    <!-- bài 2 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                <i class="fa fa-handshake-o" aria-hidden="true"></i> Đếm Số Dương
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="list-group">
+                                <form class="row">
+                                    <div class="array-button pt-3 ml-5"><button type="button" id="btnDemSo"
+                                            class="btn btn-primary ">Đếm Số</button></div>
+                                </form>
+                                <p id="txtDemSo" class="alert alert-success col-11 my-3 ml-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--xxxxxxx bài 2 xxxxxxxxx-->
+                    <!-- bài 3 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                <i class="fa fa-star-o" aria-hidden="true"></i> Tìm Số Nhỏ Nhất
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="list-group">
+                                <form class="row">
+                                    <div class="array-button pt-3 ml-5"><button type="button" id="btnMin"
+                                            class="btn btn-primary ">Tìm Số Nhỏ Nhất</button></div>
+                                </form>
+                                <p id="txtMin" class="alert alert-success col-11 my-3 ml-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--xxxxxxx bài 3 xxxxxxxxx-->
+                    <!-- bài 4 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                                <i class="fa fa-star-o" aria-hidden="true"></i> Tìm Số Dương Nhỏ Nhất
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                            <div class="list-group">
+                                <form class="row">
+                                    <div class="array-button pt-3 ml-5"><button type="button" id="btnDuongMin"
+                                            class="btn btn-primary ">Tìm Số Dương Nhỏ Nhất</button></div>
+                                </form>
+                                <p id="txtDuongMin" class="alert alert-success col-11 my-3 ml-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--xxxxxxx bài 4 xxxxxxxxx-->
+                    <!-- bài 5 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapsefive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i> Tìm Số Chẳn Cuối Cùng
+                            </a>
+                        </div>
+                        <div id="collapsefive" class="collapse" data-parent="#accordion">
+                            <div class="list-group">
+                                <form class="row">
+                                    <div class="array-button pt-3 ml-5"><button type="button" id="btnSoChan"
+                                            class="btn btn-primary ">Tìm Số Chẵn</button></div>
+                                </form>
+                                <p id="txtSoChan" class="alert alert-success col-11 my-3 ml-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--xxxxxxx bài 5 xxxxxxxxx-->
+                    <!-- bài 6 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+                                <i class="fa fa-star-o" aria-hidden="true"></i> Đổi Chổ
+                            </a>
+                        </div>
+                        <div id="collapseSix" class="collapse" data-parent="#accordion">
+                            <div class="list-group">
+                                <form class="row pt-3">
+                                    <div class="form-group col-6">
+                                        <input type="text" class="form-control" id="inputNum1"
+                                            placeholder="Nhập số vị trí 1">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <input type="number" class="form-control" id="inputNum2"
+                                            placeholder="Nhập số vị trí 2">
+                                    </div>
+                                    <button type="button" id="btnDoiCho" class="btn btn-primary ml-3">Đổi Chổ</button>
+                                </form>
+                                <p id="txtDoiCho" class="alert alert-success col-11 my-3 ml-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--xxxxxxx bài 6 xxxxxxxxx-->
+                    <!-- bài 7 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+                                <i class="fa fa-star-o" aria-hidden="true"></i> Sắp Xếp Tăng Dần
+                            </a>
+                        </div>
+                        <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                            <div class="list-group">
+                                <form class="row">
+                                    <div class="array-button pt-3 ml-5"><button type="button" id="btnSapXepTang"
+                                            class="btn btn-primary ">Sắp Xếp</button></div>
+                                </form>
+                                <p id="txtSapXepTang" class="alert alert-success col-11 my-3 ml-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--xxxxxxx bài 7 xxxxxxxxx-->
+                    <!-- bài 8 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+                                <i class="fa fa-star-o" aria-hidden="true"></i> Tìm Số Nguyên Tố Đầu Tiên
+                            </a>
+                        </div>
+                        <div id="collapseEight" class="collapse" data-parent="#accordion">
+                            <div class="list-group">
+                                <form class="row">
+                                    <div class="array-button pt-3 ml-5"><button type="button" id="btnSoNguyenTo"
+                                            class="btn btn-primary ">Tìm Số Nguyên Tố</button></div>
+                                </form>
+                                <p id="txtSoNguyenTo" class="alert alert-success col-11 my-3 ml-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--xxxxxxx bài 8 xxxxxxxxx-->
+                    <!-- bài 9 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseNine">
+                                <i class="fa fa-star-o" aria-hidden="true"></i> Đếm Số Nguyên
+                            </a>
+                        </div>
+                        <div id="collapseNine" class="collapse" data-parent="#accordion">
+                            <div class="list-group">
+                                <form class="row ml-3">
+                                    <div class="form-group col-6 pt-4 ">
+                                        <input type="number" class="form-control" id="inputSo" placeholder="Nhập số">
+                                    </div>
+                                    <div class="array-button pt-4"><button type="button" id="btnThem"
+                                            class="btn btn-primary ">Thêm
+                                            Số</button></div>
+                                </form>
+                                <p id="txtSo" class="alert alert-success col-11 my-3 ml-3"></p>
+                                <form class="row">
+                                    <div class="array-button pt-2 ml-5"><button type="button" id="btnDemSoNguyenTo"
+                                            class="btn btn-primary ">Đếm Nguyên Tố</button></div>
+                                </form>
+                                <p id="txtDemSoNguyenTo" class="alert alert-success col-11 my-3 ml-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--xxxxxxx bài 9 xxxxxxxxx-->
+                    <!-- bài 10 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTen">
+                                <i class="fa fa-star-o" aria-hidden="true"></i> So Sánh Số Lượng Số Âm Và Dương
+                            </a>
+                        </div>
+                        <div id="collapseTen" class="collapse" data-parent="#accordion">
+                            <div class="list-group">
+                                <form class="row">
+                                    <div class="array-button pt-3 ml-5"><button type="button" id="btnSoSanh"
+                                            class="btn btn-primary ">So Sánh</button></div>
+                                </form>
+                                <p id="txtSoSanh" class="alert alert-success col-11 my-3 ml-3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--xxxxxxx bài 10 xxxxxxxxx-->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
